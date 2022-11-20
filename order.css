@@ -1,0 +1,70 @@
+/* Clean up the original page Setting */
+*{
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+/* Type area set up */
+.w{
+    width: 1226px;
+    height: 100%;
+    margin: 0 auto;
+}
+/* set the food list border*/
+.food-list{
+    width: 1000px;
+     
+}
+.food-list li{
+    width: 330px;
+    float: left;
+    border: 1px solid #333;
+    height: 530px;
+}
+/* add li style */
+.food-list li:hover{
+    box-shadow: 7px 10px 10px rgba(0,0,0,0.1);
+}
+/* set the food list image */
+.food-list img{
+    width: 300px;
+    height: 230px;
+    margin:10px 0 0 15px;
+}
+/* set the food list text */
+.food-list .food-text{
+    position: relative;
+    text-align: left;
+    padding: 20px;
+}
+.food-text h3:hover a{
+   color: rgb(206, 117, 153);
+   font-size: large;
+   transition: all 0.5s;
+}
+.food-text h3,.price,.ingredient,.food-infor{
+    margin-bottom: 20px;
+}
+.food-infor{
+    margin-top: 50px;
+    color: rgb(190, 125, 164);
+}
+.ingredient{
+    color: rgb(185, 179, 179);
+}
+/* set the food list line */
+.food-text .line{
+    width: 330px;
+    height: 1px;
+    background-color:rgb(226, 222, 222);
+    position: absolute;
+    left: 0;
+    bottom: 105px;
+}

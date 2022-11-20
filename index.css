@@ -1,0 +1,56 @@
+/* add font style */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@1,300&display=swap');
+/* Clean up the original page Setting */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(249, 232, 232);
+}
+/* Type area set up */
+.w{
+    width: 1226px;
+    height: 100%;
+    margin: 0 auto;
+}
+/* set index picture */
+.index-wrapper .img1{
+    width: 100%;
+    height: 100%;
+}
+/* set text */
+.index-wrapper{
+    position: relative;
+}
+.index-wrapper a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+/* set text-ORDER NOW */
+.index-wrapper .orderNow{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+/* set text-VIEW OUR MENU */
+.index-wrapper .viewMenu{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.index-wrapper .viewMenu:hover{
+    font-size: 25px;
+    color: rgb(246, 244, 239);
+    transition: all 0.5s;
+}
+/* set order button */
+.order-online img{
+    width: 170px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}

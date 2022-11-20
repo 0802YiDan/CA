@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User order information</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <!-- insert a burger image -->
+    <div class="burgerCartoon">
+        <img src="cartoon2.png" alt="" width="300px">
+    </div>
+    <!-- form-wrapper -->
+    <div class="form-wrapper">
+        <!-- insert a girl image -->
+        <div class="cartoon"><img src="cartoon.png" alt="" width="80px"></div>
+        <div class="form-heading">Please fill in your order information</div>
+        <form action="#">
+            <!-- user FirstName -->
+            <div class="input-data">
+                <input type="text" name="User firstName" required placeholder="enter your first name" autofocus
+                    id="firstName">
+                <br>
+                <label for="firstName">First Name</label>
+            </div>
+            <!-- user LastName -->
+            <div class="input-data">
+                <input type="text" name="User lastName" required placeholder="enter your last name" id="lastName">
+                <br>
+                <label for="lastName">Last Name</label>
+            </div>
+            <!-- user password -->
+            <div class="input-data">
+                <input type="password" name="Password" required placeholder="enter your password" maxlength="9"
+                    id="password">
+                <br>
+                <label for="password">Password</label>
+            </div>
+            <!-- user Confirm password -->
+            <div class="input-data">
+                <input type="password" name="Confirm Password" required placeholder="enter your password again"
+                    maxlength="9" id="confirmPassword">
+                <br>
+                <label for="confirmPassword">Confirm Password</label>
+            </div>
+            <!-- form right -->
+            <div class="form-right">
+                <!-- burger number -->
+                <div class="input-data">
+                    <input type="number" name="burgerNumber" required placeholder="enter the number of burgers"
+                        id="burgerNumber" value="1" min="1">
+                    <br>
+                    <label for="burgerNumber">the number of burgers</label>
+                </div>
+                <!-- discount code -->
+                <div class="input-data">
+                    <input type="text" name="discountCode" required placeholder="enter your Discount Code"
+                        id="discountCode">
+                    <br>
+                    <label for="discountCode">Discount Code</label>
+                </div>
+                <!-- choose burger size -->
+                <select name="burgerSize" id="burgerSize" onchange="warn()">
+                    <option value="Large">6oz Large</option>
+                    <option value="Extra-Large">10oz Extra-Large</option>
+                    <option value="Supersize">16oz Supersize
+                    </option>
+                </select>
+                <div class="burgerSize">Please choose a burger of size</div>
+                <br>
+            </div>
+            <!-- submit button -->
+            <div class="sub-btn">
+                <input type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+    <script>
+        //If user choose super size burger,there is a alert.
+        function warn() {
+            var get = document.getElementById("burgerSize");
+            if (get.value === 'Supersize') {
+                alert("This is super size burger,for your health and safety reasons,Please confirm your burger size.");
+            }
+        }
+    </script>
+</body>
+
+</html>

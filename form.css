@@ -1,0 +1,111 @@
+/* add font style */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+/* Clean up the original page Setting */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    
+}
+body{
+    background-image: url(wowburger2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(236, 220, 220);
+}
+/* insert a burger cartoon image */
+.burgerCartoon{
+    position: absolute;
+    top: -120px;
+    left: 140px;
+    z-index: 9999;
+}
+/* form wrapper style */
+.form-wrapper{
+    position: relative;
+    margin:90px auto;
+    width: 500px;
+    height: 300px;
+    padding: 25px 40px 10px 40px;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(0,0,0,.7);
+    background-color: #f5f3ec;
+    
+}
+/* insert a girl image */
+.cartoon{
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+}
+/* heading style */
+.form-wrapper .form-heading{
+    font-family: 'Noto Serif', serif;
+    font-size: 23px;
+    text-align: center;
+     background: -webkit-linear-gradient(right, #b07690,#c4bb6a,#b8648a,#c4b95d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* form style */
+.form-wrapper form{
+    padding-top: 30px;
+}
+/* input style */
+.input-data{
+    margin-bottom: 8px;
+}
+.input-data input{
+    width: 200px;
+    height: 20px;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,.12);
+    font-size: 15px;
+    background-color: #f5f3ec;
+    color: rgb(122, 121, 121);
+}
+.input-data label,.burgerSize{
+    font-size: 18px;
+    font-family: 'PT Sans Narrow', sans-serif;
+     background: -webkit-linear-gradient(right, #b07690,#c4bb6a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* set burger size select*/
+.form-right{
+   position: absolute;
+   right: 30px;
+   top: 87px;
+}
+#burgerSize{
+    width: 200px;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-bottom:2px solid rgba(0,0,0,.12);
+    background-color: rgb(238, 228, 228);
+    color: rgb(122, 121, 121);
+    font-size: 15px;
+}
+
+/* set submit button */
+.sub-btn input{
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    right: 100px;
+    bottom: 40px;
+     background: -webkit-linear-gradient(right, #f1afcd,#f1e35c);
+     overflow: hidden;
+     border: none;
+     color: #fff;
+     text-transform: uppercase;
+     font-weight: 700; 
+     border-radius: 20px;
+      
+}
+.sub-btn input:hover{
+     background: -webkit-linear-gradient(right,#f3dd1f, #f1afcd);
+     box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+}
